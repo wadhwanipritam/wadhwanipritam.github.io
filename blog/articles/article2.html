@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Monoliths to Microservices</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f8f9fa; color: #333; }
+        .container { max-width: 800px; margin: 40px auto; padding: 20px; }
+        header { border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 40px; }
+        header h1 { margin: 0; font-size: 2em; }
+        nav a { margin-left: 20px; color: #007bff; text-decoration: none; font-size: 1.1em; }
+        nav a:first-child { margin-left: 0; }
+        nav { margin-top: 10px; }
+        .article-content { background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .article-content .date { color: #888; font-size: 0.9em; margin-bottom: 20px; }
+        .article-content h2 { font-size: 1.5em; margin-top: 40px; }
+        .article-content h3 { font-size: 1.25em; margin-top: 30px; padding-bottom: 5px; border-bottom: 1px solid #eee; }
+        .article-content p { margin-bottom: 15px; }
+        .article-content blockquote {
+            border-left: 4px solid #007bff;
+            padding-left: 20px;
+            margin: 25px 0;
+            font-style: italic;
+            color: #555;
+        }
+        .article-content ol { padding-left: 20px; }
+        .article-content ul { padding-left: 20px; list-style-type: '→ '; }
+        .article-content img { max-width: 100%; height: auto; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Post 2 of 7: From Monoliths to Microservices</h1>
+            <nav>
+                <a href="/index.html">Home</a>
+                <a href="/blog/blog.html">Back to Blog</a>
+            </nav>
+        </header>
+
+        <main class="article-content">
+            <p class="date">Published on October 10, 2025</p>
+
+            <p>The history of software architecture isn't just a series of technical fads; it's a relentless, multi-decade march towards a single goal: decoupling. From the first central mainframes to today's distributed cloud-native applications, every major architectural shift has been about breaking things into smaller, more independent pieces. This journey is what makes the concept of Agentic AI not a radical departure, but the next logical conclusion.</p>
+            
+            <p>Let's trace this path:</p>
+            <ul>
+                <li><strong>Mainframe → Client-Server:</strong> This was the first great decoupling, separating the user interface (presentation) from the centralized processing and data. For the first time, two separate pieces of software had to communicate over a network.</li>
+                <li><strong>Client-Server → N-Tier Web:</strong> The web browser standardized the "client," leading to the N-Tier model that separated presentation, application logic, and data. This allowed for greater scale and specialization.</li>
+                <li><strong>N-Tier → Service-Oriented Architecture (SOA):</strong> This was the enterprise's first major attempt to break down the monolithic application tier into reusable "services." The goal was noble: create a portfolio of business services that could be composed into different applications. However, SOA in practice was often crippled by heavyweight protocols (SOAP, WS-*) and, critically, a centralized governance model with an Enterprise Service Bus (ESB) acting as a central traffic cop [2]. This created a new kind of bottleneck, often leading to a "distributed monolith" that was complex and slow.</li>
+                <li><strong>SOA → Microservices:</strong> The microservices movement was a direct rebellion against the failings of SOA. It championed the principle of "smart endpoints and dumb pipes" [1]. Each microservice was fully self-contained and owned its own data. Communication was done via simple, lightweight APIs (like REST) over a "dumb" network pipe. Governance was decentralized, with each team responsible for its own service. This massively increased development velocity and team autonomy.</li>
+            </ul>
+
+            <p>This trend line is unmistakable. We have moved from a single, centralized intelligence (the mainframe) to a decentralized system of many small, specialized, but ultimately passive components. A microservice is a brilliant piece of code, but it is fundamentally reactive. It sits and waits for an API call before it does anything.</p>
+
+            <p>The next step in this evolution is to make these components active and goal-oriented. This is the leap from a passive, callable microservice to an autonomous, proactive agent. An agent isn't just a piece of code that can perform a task; it's an entity that has been given a goal and has the autonomy to decide how and when to perform the tasks necessary to achieve it. This is the final stage of decoupling—not just decoupling code, but decoupling execution from explicit invocation.</p>
+
+            <h3>References</h3>
+            <ol start="1">
+                <li>S. Newman, <em>Building Microservices: Designing Fine-Grained Systems</em>. O'Reilly Media, 2015.</li>
+                <li>T. Erl, <em>Service-Oriented Architecture: Concepts, Technology, and Design</em>. Prentice Hall, 2005.</li>
+            </ol>
+
+        </main>
+    </div>
+</body>
+</html>
 
